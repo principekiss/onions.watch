@@ -1,4 +1,4 @@
-![onion.watch](static/onions.png)
+![onion.watch](static/onions.svg)
 
 - [x] Install Vagrant and VirtualBox in [this tutorial](https://www.bogotobogo.com/DevOps/Vagrant/Vagrant_VirtualBox.php)
 
