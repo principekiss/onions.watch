@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/tuxicorn/dd-flask/pyenv"
+set -gx VIRTUAL_ENV "/home/tuxicorn/cyberiacafe/pyenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

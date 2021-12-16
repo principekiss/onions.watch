@@ -1,7 +1,13 @@
-gunicorn==19.4.5
+certifi==2021.10.8
+charset-normalizer==2.0.9
 click==8.0.1
 Flask==2.0.1
+gunicorn==19.4.5
+idna==3.3
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
+PySocks==1.7.1
+requests==2.26.0
+urllib3==1.26.7
 Werkzeug==2.0.1
