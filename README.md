@@ -2,6 +2,8 @@
  <img src="static/onions.svg">
 </p>
 
+
+
 <p align="center">
   <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/tuxicorn/onions.watch" />
   <img alt="Github License" src="https://img.shields.io/github/license/tuxicorn/onions.watch" />
@@ -11,18 +13,18 @@
  <img alt="Requests Version" src="https://img.shields.io/github/pipenv/locked/dependency-version/tuxicorn/onions.watch/requests/master" />
  <img alt="Reddit" src="https://img.shields.io/reddit/user-karma/combined/principekiss?style=social" />
  
- 
+</p>
+</br>
+
+
+</br>
+
+This project is a copy of [dark.fail](https://dark.fail) and aims to provide a codebase to allow anyone to create their own information site about [onion services](https://community.torproject.org/onion-services/).  <b><i>I solemnly swear that i am up to no dark</i></b>
 </p>
 
-<p align="center">
-<i>Learn how to use Tor hidden services safely. Check whether a darknet site is online, view the uptime history of popular darknet sites and their mirrors.</i>
-</p>
 
-This project is a copy of [dark.fail](https://dark.fail) and aims to provide a codebase to allow anyone to create their own information site about [onion services](https://community.torproject.org/onion-services/).
-
-<p align="center">
- <b><i>I solemnly swear that i am up to no dark</i></b>.
-</p>
+</br>
+</br>
 
 Install Vagrant and VirtualBox in [this tutorial](https://www.bogotobogo.com/DevOps/Vagrant/Vagrant_VirtualBox.php)
 
