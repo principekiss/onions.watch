@@ -18,8 +18,11 @@
 <i>Learn how to use Tor hidden services safely. Check whether a darknet site is online, view the uptime history of popular darknet sites and their mirrors.</i>
 </p>
 
-This project is a copy of [dark.fail](https://dark.fail) and aims to provide a codebase to allow anyone to create their own information site about [onion services](https://community.torproject.org/onion-services/) as well and ***I solemnly swear that i am up to no dark***.
+This project is a copy of [dark.fail](https://dark.fail) that aims to provide a codebase to allow anyone to create their own information site about [onion services](https://community.torproject.org/onion-services/).
 
+<p align="center">
+ <b><i>I solemnly swear that i am up to no dark</i></b>.
+</p>
 
 Install Vagrant and VirtualBox in [this tutorial](https://www.bogotobogo.com/DevOps/Vagrant/Vagrant_VirtualBox.php)
 
