@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link href="static/onion.svg" rel="icon" type="image/x-icon">
+<style>
+html{
+    font-family: Liberation Sans;
+    color: #212529;
+    background-color:#FCFCFC;
+    padding-bottom: 75px;
+}
+code{
+    font-size:1.3em
+}
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .2em;
+    padding-right: .2em;
+    max-width: 768px;
+    color:rgba(48, 55, 109, 0.6);
+}
+a {
+    text-decoration: none;
+    color: rgba(103, 176, 48);
+
+}
+h3 {
+    padding-bottom: 25px;
+    color: rgb(115,20,161);
+}
+h3 span {
+    color: rgba(103, 176, 48);
+    text-shadow: none;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    float: right;
+    text-align: right;
+}
+
+.html {
+    color: #212529;
+}
+
+p {
+    color: #444;
+}
+h4 {
+    color: #444;
+}
+pre{
+    overflow:hidden;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.last_seen {
+    font-size: 12px;
+    color: #999;
+}
+.offline li {
+    display: inline;
+    color: #bbb;
+    font-size: 8pt;
+}
+.online a {
+    font-size: 10pt;
+}
+.online li {
+    padding-left: 1em;
+    text-indent: -.7em;
+    
+}
+.online li::before {
+    background-size: 15px 15px;
+    background-image: url('static/onion.svg');
+    padding-left: 67px;
+    content: "";
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 0.4rem rgb(115,20,161));
+    opacity: 0.8;
+}
+li.status2::before {
+    color: #eee;
+}
+.offline h5 {
+    color: #bbb;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+.offline ul {
+    margin-top: -19px;
+    margin-left: 60px;
+    max-width: 265px;
+    max-height: 100px;
+    overflow: auto;
+}
+.offline li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+.more {
+    padding-top: 5px;
+    padding-left: 17px;
+}
+.more a {
+    color: #384a12;
+}
+h4 a {
+    color: #444;
+}
+h4 a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(48, 55, 109, 0.2);
+}
+</style>
+<title>onion.watch</title>
+
+</head>
+<body>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
