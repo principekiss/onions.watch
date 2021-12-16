@@ -1,0 +1,72 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+    <h3>onion.watch: Is a darknet site online ? 
+    <span>Updated {{ last_update }} UTC<br></span></h3>
+
+    <p>
+      <b>You are on the clearnet.</b> It is not recommended to view our site here. Domain names are not as secure as Tor hidden services. Install Tor Browser and visit us at our .onion instead:
+    </p>
+  <p>
+    {% for onion in onions %}
+      {% if onion['name'] == 'onion.watch' %}
+        <code>{{ onion['address'] }}</code>
+      {% endif %}
+    {% endfor %}
+    <a href="/mirros.txt">Verify</a>
+  </p>
+
+  <p>
+    Tor is the uncensored internet. Install 
+    <a href="https://www.torproject.org">Tor Browser</a> 
+    to explore it. Set 
+    {% for onion in onions %}
+      {% if onion['name'] == 'onion.watch' %}
+        <code>{{ onion['address'] }}</code>
+      {% endif %}
+    {% endfor %}
+    as your home page to save time. Links are PGP verified and unclickable for your safety. onion.watch
+    <a href="#philosophy">philosophy</a> 
+    and 
+    <a href="#finances">finances</a>
+  </p>
+
+  <p>
+    <b>This resource is intended for researchers only.</b> We do not vouch for any sites.
+  </p>
+
+  {% for onion in onions %}
+      <h4>
+        <a href="">{{ onion['name'] }}</a>
+      </h4>
+      <div class={{ onion['status'] }}>
+        {% if onion['status'] == 'offline' %}
+          <h5>{{ onion['status'] }}</h5>
+        {% endif %}
+        <ul>
+        <li class="{{ onion['status'] }} {{ onion['status_nb'] }}">
+          <code>{{ onion['address'] }}</code>
+        </li>
+        </ul>
+      </div>
+  {% endfor %}
+
+  <h3 class="html">Philosophy</h3>
+  <p>Always fast, one server request. No tracking ever, no javascript ever.</p>
+  <p>Accurate URLs verified by PGP. No direct linking in order to protect against DNS leaks from accidental clicking in a clearnet browser.</p>
+  <p>Knowledge of darknet site uptime is important to many cybersecurity researchers. This site is provided for information only. No endorsements are made or implied regarding any sites or organizations mentioned here.</p>
+  <p>Defend your right to privacy: <a href="https://supporters.eff.org/">donate to the EFF.</a></p>
+  <h5 class="html">Donations are Appreciated</h5>
+  <p>onion.watch is supported by our users. No sites pay for placement or advertisements, no affiliate links have or will ever be used. If this resource has helped you please consider sending a contribution.</p>
+  <p>Monero: <code>8BENWZNwpzwDqkbLqVgVdTNt9WhN4LdUY4PpBLngaSXc8GkP1N7hdzjJDy9gUiWx3zLTvhnteiYPsXr8tegpR5nGNjtehzw</code></p>
+  <h5 class="html">PGP Key</h5>
+  <p>My current key is available at <a href="/pgp.txt">/pgp.txt</a>.</p>
+  <p>
+    <a href="/pgp-sigs.txt">PGP key rotation history</a>
+  </p>
+
+{% endblock content %}
+
+
+
