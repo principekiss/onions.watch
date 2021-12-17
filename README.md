@@ -19,7 +19,7 @@
 
 </br>
 
-This project is a copy of [dark.fail](https://dark.fail) and aims to provide a codebase to allow anyone to create their own website that assess the uptime of popular [onion services](https://community.torproject.org/onion-services/). <b><i>I solemnly swear that i am up to no dark.</i></b>
+This project is a copy of [dark.fail](https://dark.fail) and aims to provide a codebase to allow anyone to create their own website that assess the uptime of popular [onion services](https://community.torproject.org/onion-services/).
 </p>
 
 
@@ -62,5 +62,11 @@ Destroy the VM
 ```sh
 vagrant destroy
 ```
-  
+</br>
+</br>
+</br>
 
+<p align="center">
+<b><i>I solemnly swear that i am up to no dark.</i></b>
+  
+</p>
