@@ -11,7 +11,6 @@
  <img alt="Python Version" src="https://img.shields.io/github/pipenv/locked/python-version/tuxicorn/onions.watch" />
  <img alt="Flask Version" src="https://img.shields.io/github/pipenv/locked/dependency-version/tuxicorn/onions.watch/flask/master" />
  <img alt="Requests Version" src="https://img.shields.io/github/pipenv/locked/dependency-version/tuxicorn/onions.watch/requests/master" />
- <img alt="Reddit" src="https://img.shields.io/reddit/user-karma/combined/principekiss?style=social" />
  
 </p>
 </br>
