@@ -51,7 +51,7 @@ pipenv install
 python app.py
 ```
 
-Create the VM and to provision it in one go
+Create the VM and provision it in one go
 
 ```sh
 vagrant up
