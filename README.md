@@ -29,7 +29,7 @@ Install Vagrant and VirtualBox in [this tutorial](https://www.bogotobogo.com/Dev
 
 Install Ansible
 
-**On Debian**
+**On Debian or Ubuntu**
 
 ```sh 
 sudo apt-get update -y
@@ -37,7 +37,7 @@ sudo apt-get update -y
 sudo apt-get install ansible
 ```
 
-**On Fedora**
+**RHEL, CentOS, or Fedora**
 
 ```sh 
 sudo dnf update -y
