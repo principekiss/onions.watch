@@ -61,16 +61,6 @@ Run the application
 python app.py
 ```
 
-Create the VM and provision it in one go
-
-```sh
-vagrant up
-```
-
-Destroy the VM
-```sh
-vagrant destroy
-```
 </br>
 </br>
 </br>
