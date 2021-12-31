@@ -50,10 +50,12 @@ Create a Virtual Environement
 ```sh
 pipenv shell
 ```
+Install Dependencies
 
 ```sh
 pipenv install
 ```
+Run the application
   
 ```sh
 python app.py
