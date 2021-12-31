@@ -29,12 +29,20 @@ Install Vagrant and VirtualBox in [this tutorial](https://www.bogotobogo.com/Dev
 
 Install Ansible
 
-```sh 
-sudo apt-get update
-```
+**On Debian**
 
 ```sh 
+sudo apt-get update -y
+
 sudo apt-get install ansible
+```
+
+**On Fedora**
+
+```sh 
+sudo dnf update -y
+
+sudo dnf install ansible
 ```
 
 Create a Virtual Environement
