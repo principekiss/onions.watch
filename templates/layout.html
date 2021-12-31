@@ -17,6 +17,7 @@ html{
 code{
     font-size:1.3em
 }
+
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -57,11 +58,14 @@ h4 {
 pre{
     overflow:hidden;
 }
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
+
 .last_seen {
     font-size: 12px;
     color: #999;
@@ -75,19 +79,29 @@ ul {
     font-size: 10pt;
 }
 .online li {
+    text-indent: -.7em;  
     padding-left: 1em;
-    text-indent: -.7em;
-    
 }
 .online li::before {
-    background-size: 12px 12px;
+content: "•";
+padding-right: .2em;
+color: rgba(103, 176, 48);
+filter: drop-shadow(0 0 0.2rem rgba(103, 176, 48));
+}
+
+/*  to use an onion svg as bullet list
+.online li::before {
+
+    background-size: 8px 8px;
     background-image: url('static/onion.svg');
     padding-left: 67px;
     content: "";
     background-repeat: no-repeat;
-    filter: drop-shadow(0 0 0.4rem rgb(115,20,161));
+    filter: drop-shadow(0 0 0.3rem rgb(115,20,161));
     opacity: 0.8;
 }
+*/
+
 li.status2::before {
     color: #eee;
 }
