@@ -60,7 +60,7 @@ pipenv install
 ### Run the app
   
 ```sh
-python app.py
+pipenv run python app.py 
 ```
 
 </br>
