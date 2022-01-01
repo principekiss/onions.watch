@@ -14,16 +14,17 @@ proxies = {
 rows = onion_address.fetchall()
 
 for row in rows:
-  res = None
+  res = "Offline"
   try:
-    ping = requests.get(url=row[0],proxies=proxies, allow_redirects=False)
+    ping = requests.get(url=row[0],proxies=proxies)
     res = ping.status_code
     if res == 200:
       query="UPDATE Onions SET status=?,status_nb=? WHERE address=?"
       values=('online','status1', row[0])
       db.execute(query,values)
       con.commit()
-    else: ping.raise_for_status()
+    else: 
+      ping.raise_for_status()
     continue
   except:
       query="UPDATE Onions SET status=?,status_nb=? WHERE address=?"
@@ -31,5 +32,10 @@ for row in rows:
       db.execute(query,values)
       con.commit() 
   finally:
-    print(res)
+    if ping.history:
+        for redirects in ping.history:
+          print("Request was redirected: ", redirects.status_code, redirects.url, "Final destination: ", ping.status_code, ping.url)
+    else:
+        print(res)
+
 
