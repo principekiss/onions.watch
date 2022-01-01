@@ -34,7 +34,7 @@ for row in rows:
   finally:
     if ping.history:
         for redirects in ping.history:
-          print("Request was redirected: ", redirects.status_code, redirects.url, "Final destination: ", ping.status_code, ping.url)
+          print(redirects.status_code, redirects.url, "➜", ping.status_code, ping.url)
     else:
         print(res)
 
