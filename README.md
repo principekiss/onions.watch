@@ -25,11 +25,23 @@ This project is a copy of [dark.fail](https://dark.fail) and aims to provide a c
 </br>
 </br>
 
-Install Vagrant and VirtualBox in [this tutorial](https://www.bogotobogo.com/DevOps/Vagrant/Vagrant_VirtualBox.php)
+### Install the Tor Browser
 
-Install Ansible
+Debian or Ubuntu
 
-**Debian or Ubuntu**
+```sh
+sudo apt install tor -y
+```
+
+RHEL, CentOS or Fedora
+
+```sh
+sudo dnf install tor -y
+```
+
+### Install Ansible
+
+Debian or Ubuntu
 
 ```sh 
 sudo apt-get update -y
@@ -37,7 +49,7 @@ sudo apt-get update -y
 sudo apt-get install ansible
 ```
 
-**RHEL, CentOS, or Fedora**
+RHEL, CentOS, or Fedora
 
 ```sh 
 sudo dnf update -y
@@ -45,17 +57,17 @@ sudo dnf update -y
 sudo dnf install ansible
 ```
 
-Create a Virtual Environement
+### Create a Virtual Environement
 
 ```sh
 pipenv shell
 ```
-Install Dependencies
+### Install Dependencies
 
 ```sh
 pipenv install
 ```
-Run the application
+### Run the app
   
 ```sh
 python app.py
