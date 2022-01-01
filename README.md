@@ -25,7 +25,7 @@ This project is a copy of [dark.fail](https://dark.fail) and aims to provide a c
 </br>
 </br>
 
-### Install the Tor Browser
+### Install Tor
 
 Debian or Ubuntu
 
