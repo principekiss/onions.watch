@@ -45,19 +45,18 @@ Archlinux and other arch-based distribution
 sudo pacman -S tor
 ```
 
-### Create a Virtual Environement and activate it
+### Create a Virtual Environement
+
 
 ```sh
-pyhton3 -m venv pyenv38
-
-source pyenv38/bin/activate
+pipenv shell
 ```
-
-### Install Dependencies
+Install Dependencies
 
 ```sh
-pip install -r requirements.txt
+pipenv install
 ```
+
 ### Run the app
   
 ```sh
