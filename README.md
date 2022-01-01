@@ -45,7 +45,7 @@ Archlinux and other arch-based distribution
 sudo pacman -S tor
 ```
 
-### Create a Virtual Environement & activate it
+### Create a Virtual Environement and activate it
 
 ```sh
 pyhton3 -m venv pyenv38
