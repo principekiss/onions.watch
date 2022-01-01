@@ -39,24 +39,6 @@ RHEL, CentOS or Fedora
 sudo dnf install tor -y
 ```
 
-### Install Ansible
-
-Debian or Ubuntu
-
-```sh 
-sudo apt-get update -y
-
-sudo apt-get install ansible
-```
-
-RHEL, CentOS, or Fedora
-
-```sh 
-sudo dnf update -y
-
-sudo dnf install ansible
-```
-
 ### Create a Virtual Environement
 
 ```sh
