@@ -44,6 +44,11 @@ Archlinux and other arch-based distribution
 ```sh
 sudo pacman -S tor
 ```
+### Intsall pipenv
+
+```sh
+pip install pipenv
+```
 
 ### Create a Virtual Environement
 
