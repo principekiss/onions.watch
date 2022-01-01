@@ -39,6 +39,12 @@ RHEL, CentOS or Fedora
 sudo dnf install tor -y
 ```
 
+Archlinux and other arch-based distribution
+
+```sh
+sudo pacman -S tor
+```
+
 ### Create a Virtual Environement
 
 ```sh
