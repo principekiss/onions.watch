@@ -16,7 +16,7 @@ rows = onion_address.fetchall()
 for row in rows:
   res = None
   try:
-    ping = requests.get(url=row[0],proxies=proxies, allow_redirects=True)
+    ping = requests.get(url=row[0],proxies=proxies, allow_redirects=False)
     res = ping.status_code
     if res == 200:
       query="UPDATE Onions SET status=?,status_nb=? WHERE address=?"
