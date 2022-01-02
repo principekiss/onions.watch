@@ -19,9 +19,8 @@ def last_update():
 def run_pysocks():
   while True:
     print("\nRunning")
-    print(threading.enumerate())
     pysocks.update_db()
-    time.sleep(15) #*60 FIXME
+    time.sleep(15*60)
 
 @app.route('/', methods=['GET'])
 def index():
