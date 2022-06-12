@@ -1,0 +1,5 @@
+[onion_services]
+onions.watch
+
+# debian
+ansible_python_interpreter=/usr/bin/python3

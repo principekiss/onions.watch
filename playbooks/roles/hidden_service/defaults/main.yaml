@@ -1,0 +1,5 @@
+---
+hidden_service_dir: hidden_service
+packages:
+  - tor
+  - apt-transport-https

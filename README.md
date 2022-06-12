@@ -27,30 +27,32 @@ This project is a copy of [dark.fail](https://dark.fail) and aims to provide a c
 
 ### Install Tor
 
-Debian or Ubuntu
+Debian/Ubuntu:
 
 ```sh
 sudo apt install tor -y
 ```
 
-RHEL, CentOS or Fedora
+RedHat:
 
 ```sh
 sudo dnf install tor -y
 ```
 
-Archlinux and other arch-based distribution
+Archlinux and other arch-based distributions:
 
 ```sh
 sudo pacman -S tor
 ```
 
-### Create a virtual environement and nstall packages
+### Create a virtual environement and install packages
 
-Create an active environemnt
+Create an activate virtual environemnt:
 ```sh
-python3 -m venv venv
-source venv/bib/activate
+python3 -m venv venv && source venv/bib/activate
+
+Install packages:
+```
 pip install -r requirements.txt
 ```
 

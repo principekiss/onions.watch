@@ -1,0 +1,69 @@
+---
+- name: install nginx
+  ansible.builtin.package:
+    name: nginx
+    state: latest
+    update_cache: true
+
+- name: update nginx config file
+  ansible.builtin.template: 
+    src: nginx.conf.j2 
+    dest: /etc/nginx/nginx.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: update default host config file
+  ansible.builtin.template:
+    src: default.j2
+    dest: /etc/nginx/sites-available/default
+    owner: root
+    group: root
+    mode: 0644
+
+- name: restart nginx
+  ansible.builtin.service:
+    name: nginx
+    state: "{{ service_default_state|default('started') }}"
+    enabled: "{{ service_default_enabled|default(true)|bool }}"
+
+- name: install tor
+  ansible.builtin.package:
+    name: "{{ item }}"
+    state: latest
+    update_cache: true
+  loop: "{{ packages }}"
+
+- name: create onion service directory
+  ansible.builtin.file:
+    path: "/var/lib/tor/{{ hidden_service_dir }}"
+    state: directory
+    owner: debian-tor
+    group: debian-tor
+    mode: 0700
+
+- name: update torrc file
+  ansible.builtin.template:
+    src: torrc.j2
+    dest: /etc/tor/torrc
+    owner: root
+    group: root
+    mode: 0644
+
+- name: restart tor
+  ansible.builtin.service:
+    name: tor
+    state: "{{ service_default_state|default('restarted') }}"
+    enabled: "{{ service_default_enabled|default(true)|bool }}"
+
+- name: register onion url
+  ansible.builtin.shell: |
+    cat /var/lib/tor/{{ hidden_service_dir }}/hostname
+  register: onion_url
+
+- name: update default host config file with onion url
+  ansible.builtin.lineinfile:
+    path: /etc/nginx/sites-available/default
+    regexp: '	server_name _;'
+    line: "	server_name {{ onion_url.stdout }};"
+    backrefs: true

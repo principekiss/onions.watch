@@ -1,0 +1,32 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: vagrant
+  provider:
+    name: virtualbox
+platforms:
+  - name: onions.watch
+    box: ubuntu/focal64
+    memory: 2000
+    cpus: 2
+    interfaces:
+      - network_name: private_network
+        type: static
+        ip: 10.0.0.27
+        auto_config: true
+    groups:
+      - onion_services
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+  env:
+    ANSIBLE_ROLES_PATH: ../../playbooks/roles
+  inventory:
+    links: 
+      host_vars: ../../inventory/host_vars
+verifier:
+  name: testinfra
+  lint:
+    name: flake8
