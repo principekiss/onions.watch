@@ -1,0 +1,12 @@
+virtualenv
+certifi
+charset-normalizer
+click
+flask
+idna
+itsdangerous
+Jinja2
+MarkupSafe
+requests[socks]
+urllib3
+Werkzeug

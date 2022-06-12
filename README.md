@@ -45,26 +45,19 @@ Archlinux and other arch-based distribution
 sudo pacman -S tor
 ```
 
-### Install pipenv and create a virtual environement
+### Create a virtual environement and nstall packages
 
-```sh
-pip install pipenv
-```
 Create an active environemnt
-
 ```sh
-pipenv shell
-```
-Install packages into the pipenv virtual environment
-
-```sh
-pipenv install
+python3 -m venv venv
+source venv/bib/activate
+pip install -r requirements.txt
 ```
 
 ### Run the app
   
 ```sh
-pipenv run python app.py 
+python app.py 
 ```
 
 </br>
