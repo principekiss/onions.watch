@@ -9,7 +9,7 @@
 </p>
 
     <p>
-      <b>You are on the clearnet.</b> It is not recommended to view our site here. Domain names are not as secure as Tor hidden services. Install Tor Browser and visit us at our .onion instead:
+      <b>You are on the clearnet.</b> It is not recommended to view our site here. Domain names are not as secure as Tor hidden services. <br></br>Install Tor Browser and visit us at our .onion instead:
     </p>
   <p>
     {% for onion in onions %}
@@ -46,7 +46,7 @@
           <h5>{{ onion['status'] }}</h5>
         {% endif %}
         <ul>
-        <li class="{{ onion['status'] }} {{ onion['status_nb'] }}">
+        <li class="{{ onion['status'] }}">
           <code>{{ onion['address'] }}</code>
         </li>
         </ul>

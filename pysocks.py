@@ -19,16 +19,16 @@ for row in rows:
     ping = requests.get(url=row[0],proxies=proxies)
     res = ping.status_code
     if res == 200:
-      query="UPDATE Onions SET status=?,status_nb=? WHERE address=?"
-      values=('online','status1', row[0])
+      query="UPDATE Onions SET status=? WHERE address=?"
+      values=('online', row[0])
       db.execute(query,values)
       con.commit()
     else: 
       ping.raise_for_status()
     continue
   except:
-      query="UPDATE Onions SET status=?,status_nb=? WHERE address=?"
-      values=('offline','status0', row[0])
+      query="UPDATE Onions SET status=? WHERE address=?"
+      values=('offline', row[0])
       db.execute(query,values)
       con.commit() 
   finally:
