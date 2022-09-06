@@ -70,8 +70,3 @@ pipenv run python app.py
 </br>
 </br>
 </br>
-
-<p align="center">
-<b><i>I solemnly swear that i am up to no dark.</i></b>
-  
-</p>
